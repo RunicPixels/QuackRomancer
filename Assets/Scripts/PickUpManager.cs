@@ -5,8 +5,38 @@ using UnityEngine;
 public class PickUpManager : MonoBehaviour {
     public List<PickUp> currentPickups;
 
+    public Transform spawnPoint;
+    public PickUpManagerEntry itemPrefab;
+    private List<GameObject> listItems = new List<GameObject>();
+    public RectTransform content;
+
+    public void Start() {
+        UpdateListItems();
+    }
+
     public void AddPickUp(PickUp pickUp)
     {
         currentPickups.Add(pickUp);
+        UpdateListItems();
+    }
+
+    public void RemovePickup(PickUp pickUp) {
+        currentPickups.Remove(pickUp);
+        UpdateListItems();
+    }
+
+    private void UpdateListItems() {
+        foreach (GameObject item in listItems) {
+            GameObject.Destroy(item);
+        }
+        listItems.Clear();
+
+        for (int i = 0; i < currentPickups.Count; i++) {
+            PickUpManagerEntry addedItem = Instantiate(itemPrefab, spawnPoint.position - i * new Vector3(0, 60, 0), Quaternion.identity, content);
+            listItems.Add(addedItem.gameObject);
+            addedItem.SetPickUp(currentPickups[i]);
+        }
+
+        content.sizeDelta = new Vector2(0, currentPickups.Count * 60);
     }
 }
