@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpManager {
+public class PickUpManager : MonoBehaviour {
     public List<PickUp> currentPickups;
 
     public void AddPickUp(PickUp pickUp)
