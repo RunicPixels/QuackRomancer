@@ -35,11 +35,11 @@ public class PlayerController : MonoBehaviour
     private void QueueInput()
     {
         currentDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        if (currentDirection.magnitude > 1f) currentDirection = currentDirection.normalized;
     }
     
     private void Move()
     {
+        if (currentDirection.magnitude > 1f) currentDirection = currentDirection.normalized;
         _rigidbody.AddForce(currentDirection * speed);
     }
 
