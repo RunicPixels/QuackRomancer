@@ -18,12 +18,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        QueueInput();
+        
         Rotate();
     }
 
     private void FixedUpdate()
     {
+        QueueInput();
         Move();
     }
 
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
         if (currentDirection.magnitude > 1f) currentDirection = currentDirection.normalized;
-        _rigidbody.AddForce(currentDirection * speed);
+        _rigidbody.AddForce(speed * Time.fixedDeltaTime * 60 * currentDirection);
     }
 
     private void Rotate()
