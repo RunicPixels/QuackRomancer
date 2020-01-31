@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5d380e-1560-46cc-a9dd-ef947b909e91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuackRomancer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuackRomancer/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuackRomancer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuackRomancer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RonaldTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RonaldTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConstantRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConstantRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ConstantRotation.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -44,6 +41,20 @@
                 <marker date="1580503695653" expanded="true" signature="6:92" ph="..." />
                 <marker date="1580503695653" expanded="true" signature="139:348" ph="{...}" />
                 <marker date="1580503695653" expanded="true" signature="277:346" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <marker date="1580505249173" expanded="false" signature="6:78" ph="..." />
+                <marker date="1580505249173" expanded="true" signature="107:240" ph="{...}" />
+                <marker date="1580505249173" expanded="true" signature="190:238" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -70,6 +81,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConstantRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -79,6 +91,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ConstantRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs" />
       </list>
     </option>
   </component>
@@ -158,12 +171,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580498628820</updated>
-      <workItem from="1580498634320" duration="4796000" />
+      <workItem from="1580498634320" duration="5412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4796000" />
+    <option name="totallyTimeSpent" value="5412000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -265,6 +278,18 @@
             <marker date="1580503695653" expanded="true" signature="6:92" ph="..." />
             <marker date="1580503695653" expanded="true" signature="139:348" ph="{...}" />
             <marker date="1580503695653" expanded="true" signature="277:346" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1580505249173" expanded="false" signature="6:78" ph="..." />
+            <marker date="1580505249173" expanded="true" signature="107:240" ph="{...}" />
+            <marker date="1580505249173" expanded="true" signature="190:238" ph="{...}" />
           </folding>
         </state>
       </provider>
