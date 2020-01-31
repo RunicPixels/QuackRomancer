@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.40 
 // Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:False,igpj:False,qofs:1000,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:33084,y:32712,varname:node_2865,prsc:2|diff-940-OUT;n:type:ShaderForge.SFN_DepthBlend,id:6631,x:30708,y:33302,varname:node_6631,prsc:2|DIST-2273-OUT;n:type:ShaderForge.SFN_Clamp01,id:799,x:30869,y:33302,varname:node_799,prsc:2|IN-6631-OUT;n:type:ShaderForge.SFN_OneMinus,id:4285,x:31046,y:33302,varname:node_4285,prsc:2|IN-799-OUT;n:type:ShaderForge.SFN_Code,id:229,x:32153,y:32673,varname:node_229,prsc:2,code:aQBmACAAKAB2AGEAbAB1AGUAIAA+ACAALgA1ACkAewAKAHIAZQB0AHUAcgBuACAAMQA7AAoAfQAKAGUAbABzAGUAewAKAHIAZQB0AHUAcgBuACAAMAA7AAoAfQA=,output:0,fname:Function,width:391,height:132,input:0,input_1_label:value|A-5315-OUT;n:type:ShaderForge.SFN_Slider,id:2273,x:30385,y:33302,ptovrint:False,ptlb:DepthBlendValue,ptin:_DepthBlendValue,varname:node_2273,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:5;n:type:ShaderForge.SFN_Lerp,id:4280,x:32462,y:33103,varname:node_4280,prsc:2|A-2953-RGB,B-4632-RGB,T-4018-OUT;n:type:ShaderForge.SFN_Color,id:4632,x:32193,y:33231,ptovrint:False,ptlb:ShallowColor,ptin:_ShallowColor,varname:node_4632,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.2028302,c2:0.9343262,c3:1,c4:1;n:type:ShaderForge.SFN_Color,id:2953,x:32193,y:33061,ptovrint:False,ptlb:DeepColor,ptin:_DeepColor,varname:node_2953,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.2122642,c2:0.4496019,c3:1,c4:1;n:type:ShaderForge.SFN_Set,id:2027,x:31210,y:33302,varname:DepthBlendFloat,prsc:2|IN-4285-OUT;n:type:ShaderForge.SFN_Get,id:4018,x:32172,y:33386,varname:node_4018,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Tex2d,id:5060,x:29841,y:32076,varname:node_5060,prsc:2,tex:13a7e0b4ff7fb4a47b685b21c6a7b4bf,ntxv:0,isnm:False|UVIN-9021-UVOUT,TEX-315-TEX;n:type:ShaderForge.SFN_FragmentPosition,id:6643,x:29101,y:31986,varname:node_6643,prsc:2;n:type:ShaderForge.SFN_Append,id:531,x:29274,y:31986,varname:node_531,prsc:2|A-6643-X,B-6643-Z;n:type:ShaderForge.SFN_Time,id:4708,x:29274,y:32284,varname:node_4708,prsc:2;n:type:ShaderForge.SFN_Slider,id:3884,x:29117,y:32211,ptovrint:False,ptlb:WaterFlowSpeed,ptin:_WaterFlowSpeed,varname:node_3884,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Multiply,id:7263,x:29461,y:32255,varname:node_7263,prsc:2|A-3884-OUT,B-4708-T;n:type:ShaderForge.SFN_Panner,id:9021,x:29672,y:32076,varname:node_9021,prsc:2,spu:1,spv:1|UVIN-7890-UVOUT,DIST-7263-OUT;n:type:ShaderForge.SFN_Rotator,id:7890,x:29464,y:31986,varname:node_7890,prsc:2|UVIN-531-OUT,ANG-6538-OUT;n:type:ShaderForge.SFN_Vector1,id:6538,x:29274,y:32122,varname:node_6538,prsc:2,v1:1;n:type:ShaderForge.SFN_Lerp,id:9470,x:30856,y:32521,varname:node_9470,prsc:2|A-5212-OUT,B-4810-OUT,T-1640-OUT;n:type:ShaderForge.SFN_Slider,id:1640,x:30523,y:32600,ptovrint:False,ptlb:FlowyWaterDepthInfluence,ptin:_FlowyWaterDepthInfluence,varname:node_1640,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Add,id:940,x:32765,y:32952,varname:node_940,prsc:2|A-229-OUT,B-4280-OUT;n:type:ShaderForge.SFN_Multiply,id:8123,x:30061,y:32001,varname:node_8123,prsc:2|A-282-OUT,B-5060-R;n:type:ShaderForge.SFN_Slider,id:282,x:29684,y:31964,ptovrint:False,ptlb:FlowyWaterWobblyness,ptin:_FlowyWaterWobblyness,varname:node_282,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:20;n:type:ShaderForge.SFN_Sin,id:5212,x:30060,y:32797,varname:node_5212,prsc:2|IN-7051-OUT;n:type:ShaderForge.SFN_Multiply,id:3925,x:29680,y:32858,varname:node_3925,prsc:2|A-4561-OUT,B-4238-OUT;n:type:ShaderForge.SFN_Slider,id:4561,x:29263,y:32915,ptovrint:False,ptlb:FlowyWaterRingThickness,ptin:_FlowyWaterRingThickness,varname:node_4561,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:10,max:100;n:type:ShaderForge.SFN_Get,id:4810,x:30659,y:32521,varname:node_4810,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Add,id:7051,x:29871,y:32797,varname:node_7051,prsc:2|A-6968-OUT,B-3925-OUT,C-8123-OUT;n:type:ShaderForge.SFN_Add,id:5315,x:31975,y:32674,varname:node_5315,prsc:2|A-9470-OUT,B-1618-OUT;n:type:ShaderForge.SFN_Multiply,id:1618,x:31793,y:32674,varname:node_1618,prsc:2|A-3968-OUT,B-7886-OUT;n:type:ShaderForge.SFN_Vector1,id:7886,x:31622,y:32727,varname:node_7886,prsc:2,v1:0.6;n:type:ShaderForge.SFN_Get,id:3968,x:31622,y:32674,varname:node_3968,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Get,id:4238,x:29458,y:33005,varname:node_4238,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Time,id:70,x:29382,y:32741,varname:node_70,prsc:2;n:type:ShaderForge.SFN_Slider,id:2513,x:29245,y:32678,ptovrint:False,ptlb:WaterRingSpeed,ptin:_WaterRingSpeed,varname:node_2513,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:5;n:type:ShaderForge.SFN_Multiply,id:6968,x:29589,y:32695,varname:node_6968,prsc:2|A-2513-OUT,B-70-T;n:type:ShaderForge.SFN_Tex2dAsset,id:315,x:29672,y:32269,ptovrint:False,ptlb:FlowyWaterNoise,ptin:_FlowyWaterNoise,varname:node_315,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:13a7e0b4ff7fb4a47b685b21c6a7b4bf,ntxv:0,isnm:False;proporder:2953-4632-2273-3884-1640-282-4561-2513-315;pass:END;sub:END;*/
+/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:False,igpj:False,qofs:1000,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:33084,y:32712,varname:node_2865,prsc:2|diff-940-OUT;n:type:ShaderForge.SFN_DepthBlend,id:6631,x:30708,y:33302,varname:node_6631,prsc:2|DIST-2273-OUT;n:type:ShaderForge.SFN_Clamp01,id:799,x:30869,y:33302,varname:node_799,prsc:2|IN-6631-OUT;n:type:ShaderForge.SFN_OneMinus,id:4285,x:31046,y:33302,varname:node_4285,prsc:2|IN-799-OUT;n:type:ShaderForge.SFN_Slider,id:2273,x:30385,y:33302,ptovrint:False,ptlb:DepthBlendValue,ptin:_DepthBlendValue,varname:node_2273,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:5;n:type:ShaderForge.SFN_Lerp,id:4280,x:32462,y:33103,varname:node_4280,prsc:2|A-2953-RGB,B-4632-RGB,T-4018-OUT;n:type:ShaderForge.SFN_Color,id:4632,x:32193,y:33231,ptovrint:False,ptlb:ShallowColor,ptin:_ShallowColor,varname:node_4632,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.2028302,c2:0.9343262,c3:1,c4:1;n:type:ShaderForge.SFN_Color,id:2953,x:32193,y:33061,ptovrint:False,ptlb:DeepColor,ptin:_DeepColor,varname:node_2953,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.2122642,c2:0.4496019,c3:1,c4:1;n:type:ShaderForge.SFN_Set,id:2027,x:31210,y:33302,varname:DepthBlendFloat,prsc:2|IN-4285-OUT;n:type:ShaderForge.SFN_Get,id:4018,x:32172,y:33386,varname:node_4018,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Tex2d,id:5060,x:29841,y:32076,varname:node_5060,prsc:2,tex:13a7e0b4ff7fb4a47b685b21c6a7b4bf,ntxv:0,isnm:False|UVIN-9021-UVOUT,TEX-315-TEX;n:type:ShaderForge.SFN_FragmentPosition,id:6643,x:29101,y:31986,varname:node_6643,prsc:2;n:type:ShaderForge.SFN_Append,id:531,x:29274,y:31986,varname:node_531,prsc:2|A-6643-X,B-6643-Z;n:type:ShaderForge.SFN_Time,id:4708,x:29274,y:32284,varname:node_4708,prsc:2;n:type:ShaderForge.SFN_Slider,id:3884,x:29117,y:32211,ptovrint:False,ptlb:WaterFlowSpeed,ptin:_WaterFlowSpeed,varname:node_3884,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Multiply,id:7263,x:29461,y:32255,varname:node_7263,prsc:2|A-3884-OUT,B-4708-T;n:type:ShaderForge.SFN_Panner,id:9021,x:29672,y:32076,varname:node_9021,prsc:2,spu:1,spv:1|UVIN-7890-UVOUT,DIST-7263-OUT;n:type:ShaderForge.SFN_Rotator,id:7890,x:29464,y:31986,varname:node_7890,prsc:2|UVIN-531-OUT,ANG-6538-OUT;n:type:ShaderForge.SFN_Vector1,id:6538,x:29274,y:32122,varname:node_6538,prsc:2,v1:1;n:type:ShaderForge.SFN_Lerp,id:9470,x:30856,y:32521,varname:node_9470,prsc:2|A-5212-OUT,B-4810-OUT,T-1640-OUT;n:type:ShaderForge.SFN_Slider,id:1640,x:30523,y:32600,ptovrint:False,ptlb:FlowyWaterDepthInfluence,ptin:_FlowyWaterDepthInfluence,varname:node_1640,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Add,id:940,x:32765,y:32952,varname:node_940,prsc:2|A-471-OUT,B-4280-OUT;n:type:ShaderForge.SFN_Multiply,id:8123,x:30061,y:32001,varname:node_8123,prsc:2|A-282-OUT,B-5060-R;n:type:ShaderForge.SFN_Slider,id:282,x:29684,y:31964,ptovrint:False,ptlb:FlowyWaterWobblyness,ptin:_FlowyWaterWobblyness,varname:node_282,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:20;n:type:ShaderForge.SFN_Sin,id:5212,x:30060,y:32797,varname:node_5212,prsc:2|IN-7051-OUT;n:type:ShaderForge.SFN_Multiply,id:3925,x:29680,y:32858,varname:node_3925,prsc:2|A-4561-OUT,B-4238-OUT;n:type:ShaderForge.SFN_Slider,id:4561,x:29263,y:32915,ptovrint:False,ptlb:FlowyWaterRingThickness,ptin:_FlowyWaterRingThickness,varname:node_4561,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:10,max:100;n:type:ShaderForge.SFN_Get,id:4810,x:30659,y:32521,varname:node_4810,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Add,id:7051,x:29871,y:32797,varname:node_7051,prsc:2|A-6968-OUT,B-3925-OUT,C-8123-OUT;n:type:ShaderForge.SFN_Add,id:5315,x:31975,y:32674,varname:node_5315,prsc:2|A-9470-OUT,B-1618-OUT;n:type:ShaderForge.SFN_Multiply,id:1618,x:31793,y:32674,varname:node_1618,prsc:2|A-3968-OUT,B-7886-OUT;n:type:ShaderForge.SFN_Vector1,id:7886,x:31622,y:32727,varname:node_7886,prsc:2,v1:0.6;n:type:ShaderForge.SFN_Get,id:3968,x:31622,y:32674,varname:node_3968,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Get,id:4238,x:29458,y:33005,varname:node_4238,prsc:2|IN-2027-OUT;n:type:ShaderForge.SFN_Time,id:70,x:29382,y:32741,varname:node_70,prsc:2;n:type:ShaderForge.SFN_Slider,id:2513,x:29245,y:32678,ptovrint:False,ptlb:WaterRingSpeed,ptin:_WaterRingSpeed,varname:node_2513,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:5;n:type:ShaderForge.SFN_Multiply,id:6968,x:29589,y:32695,varname:node_6968,prsc:2|A-2513-OUT,B-70-T;n:type:ShaderForge.SFN_Tex2dAsset,id:315,x:29672,y:32269,ptovrint:False,ptlb:FlowyWaterNoise,ptin:_FlowyWaterNoise,varname:node_315,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:13a7e0b4ff7fb4a47b685b21c6a7b4bf,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Add,id:8700,x:30907,y:32087,varname:node_8700,prsc:2|A-1597-R,B-4005-T;n:type:ShaderForge.SFN_Tex2d,id:1597,x:30704,y:32087,varname:node_1597,prsc:2,tex:13a7e0b4ff7fb4a47b685b21c6a7b4bf,ntxv:0,isnm:False|UVIN-531-OUT,TEX-315-TEX;n:type:ShaderForge.SFN_Time,id:4005,x:30704,y:32222,varname:node_4005,prsc:2;n:type:ShaderForge.SFN_Sin,id:895,x:31075,y:32087,varname:node_895,prsc:2|IN-8700-OUT;n:type:ShaderForge.SFN_Clamp01,id:1252,x:31252,y:32087,varname:node_1252,prsc:2|IN-895-OUT;n:type:ShaderForge.SFN_Step,id:471,x:32176,y:32674,varname:node_471,prsc:2|A-5736-OUT,B-5315-OUT;n:type:ShaderForge.SFN_Vector1,id:5736,x:31975,y:32601,varname:node_5736,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Step,id:2483,x:31448,y:32087,varname:node_2483,prsc:2|A-1252-OUT,B-1033-OUT;n:type:ShaderForge.SFN_Vector1,id:1033,x:31252,y:32231,varname:node_1033,prsc:2,v1:0.9;proporder:2953-4632-2273-3884-1640-282-4561-2513-315;pass:END;sub:END;*/
 
 Shader "Shader Forge/Water_v3" {
     Properties {
@@ -45,15 +45,6 @@ Shader "Shader Forge/Water_v3" {
             #pragma multi_compile_fog
             #pragma target 3.0
             uniform sampler2D _CameraDepthTexture;
-            float Function( float value ){
-            if (value > .5){
-            return 1;
-            }
-            else{
-            return 0;
-            }
-            }
-            
             uniform sampler2D _FlowyWaterNoise; uniform float4 _FlowyWaterNoise_ST;
             UNITY_INSTANCING_BUFFER_START( Props )
                 UNITY_DEFINE_INSTANCED_PROP( float, _DepthBlendValue)
@@ -174,16 +165,15 @@ Shader "Shader Forge/Water_v3" {
                 float node_7890_cos = cos(node_7890_spd*node_7890_ang);
                 float node_7890_sin = sin(node_7890_spd*node_7890_ang);
                 float2 node_7890_piv = float2(0.5,0.5);
-                float2 node_7890 = (mul(float2(i.posWorld.r,i.posWorld.b)-node_7890_piv,float2x2( node_7890_cos, -node_7890_sin, node_7890_sin, node_7890_cos))+node_7890_piv);
+                float2 node_531 = float2(i.posWorld.r,i.posWorld.b);
+                float2 node_7890 = (mul(node_531-node_7890_piv,float2x2( node_7890_cos, -node_7890_sin, node_7890_sin, node_7890_cos))+node_7890_piv);
                 float2 node_9021 = (node_7890+(_WaterFlowSpeed_var*node_4708.g)*float2(1,1));
                 float4 node_5060 = tex2D(_FlowyWaterNoise,TRANSFORM_TEX(node_9021, _FlowyWaterNoise));
-                float node_8123 = (_FlowyWaterWobblyness_var*node_5060.r);
-                float node_5212 = sin(((_WaterRingSpeed_var*node_70.g)+(_FlowyWaterRingThickness_var*DepthBlendFloat)+node_8123));
                 float _FlowyWaterDepthInfluence_var = UNITY_ACCESS_INSTANCED_PROP( Props, _FlowyWaterDepthInfluence );
-                float node_9470 = lerp(node_5212,DepthBlendFloat,_FlowyWaterDepthInfluence_var);
+                float node_5315 = (lerp(sin(((_WaterRingSpeed_var*node_70.g)+(_FlowyWaterRingThickness_var*DepthBlendFloat)+(_FlowyWaterWobblyness_var*node_5060.r))),DepthBlendFloat,_FlowyWaterDepthInfluence_var)+(DepthBlendFloat*0.6));
                 float4 _DeepColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _DeepColor );
                 float4 _ShallowColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _ShallowColor );
-                float3 diffuseColor = (Function( (node_9470+(DepthBlendFloat*0.6)) )+lerp(_DeepColor_var.rgb,_ShallowColor_var.rgb,DepthBlendFloat));
+                float3 diffuseColor = (step(0.5,node_5315)+lerp(_DeepColor_var.rgb,_ShallowColor_var.rgb,DepthBlendFloat));
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;
@@ -219,15 +209,6 @@ Shader "Shader Forge/Water_v3" {
             #pragma multi_compile_fog
             #pragma target 3.0
             uniform sampler2D _CameraDepthTexture;
-            float Function( float value ){
-            if (value > .5){
-            return 1;
-            }
-            else{
-            return 0;
-            }
-            }
-            
             uniform sampler2D _FlowyWaterNoise; uniform float4 _FlowyWaterNoise_ST;
             UNITY_INSTANCING_BUFFER_START( Props )
                 UNITY_DEFINE_INSTANCED_PROP( float, _DepthBlendValue)
@@ -306,16 +287,15 @@ Shader "Shader Forge/Water_v3" {
                 float node_7890_cos = cos(node_7890_spd*node_7890_ang);
                 float node_7890_sin = sin(node_7890_spd*node_7890_ang);
                 float2 node_7890_piv = float2(0.5,0.5);
-                float2 node_7890 = (mul(float2(i.posWorld.r,i.posWorld.b)-node_7890_piv,float2x2( node_7890_cos, -node_7890_sin, node_7890_sin, node_7890_cos))+node_7890_piv);
+                float2 node_531 = float2(i.posWorld.r,i.posWorld.b);
+                float2 node_7890 = (mul(node_531-node_7890_piv,float2x2( node_7890_cos, -node_7890_sin, node_7890_sin, node_7890_cos))+node_7890_piv);
                 float2 node_9021 = (node_7890+(_WaterFlowSpeed_var*node_4708.g)*float2(1,1));
                 float4 node_5060 = tex2D(_FlowyWaterNoise,TRANSFORM_TEX(node_9021, _FlowyWaterNoise));
-                float node_8123 = (_FlowyWaterWobblyness_var*node_5060.r);
-                float node_5212 = sin(((_WaterRingSpeed_var*node_70.g)+(_FlowyWaterRingThickness_var*DepthBlendFloat)+node_8123));
                 float _FlowyWaterDepthInfluence_var = UNITY_ACCESS_INSTANCED_PROP( Props, _FlowyWaterDepthInfluence );
-                float node_9470 = lerp(node_5212,DepthBlendFloat,_FlowyWaterDepthInfluence_var);
+                float node_5315 = (lerp(sin(((_WaterRingSpeed_var*node_70.g)+(_FlowyWaterRingThickness_var*DepthBlendFloat)+(_FlowyWaterWobblyness_var*node_5060.r))),DepthBlendFloat,_FlowyWaterDepthInfluence_var)+(DepthBlendFloat*0.6));
                 float4 _DeepColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _DeepColor );
                 float4 _ShallowColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _ShallowColor );
-                float3 diffuseColor = (Function( (node_9470+(DepthBlendFloat*0.6)) )+lerp(_DeepColor_var.rgb,_ShallowColor_var.rgb,DepthBlendFloat));
+                float3 diffuseColor = (step(0.5,node_5315)+lerp(_DeepColor_var.rgb,_ShallowColor_var.rgb,DepthBlendFloat));
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;
@@ -352,15 +332,6 @@ Shader "Shader Forge/Water_v3" {
             #pragma multi_compile_fog
             #pragma target 3.0
             uniform sampler2D _CameraDepthTexture;
-            float Function( float value ){
-            if (value > .5){
-            return 1;
-            }
-            else{
-            return 0;
-            }
-            }
-            
             uniform sampler2D _FlowyWaterNoise; uniform float4 _FlowyWaterNoise_ST;
             UNITY_INSTANCING_BUFFER_START( Props )
                 UNITY_DEFINE_INSTANCED_PROP( float, _DepthBlendValue)
@@ -420,16 +391,15 @@ Shader "Shader Forge/Water_v3" {
                 float node_7890_cos = cos(node_7890_spd*node_7890_ang);
                 float node_7890_sin = sin(node_7890_spd*node_7890_ang);
                 float2 node_7890_piv = float2(0.5,0.5);
-                float2 node_7890 = (mul(float2(i.posWorld.r,i.posWorld.b)-node_7890_piv,float2x2( node_7890_cos, -node_7890_sin, node_7890_sin, node_7890_cos))+node_7890_piv);
+                float2 node_531 = float2(i.posWorld.r,i.posWorld.b);
+                float2 node_7890 = (mul(node_531-node_7890_piv,float2x2( node_7890_cos, -node_7890_sin, node_7890_sin, node_7890_cos))+node_7890_piv);
                 float2 node_9021 = (node_7890+(_WaterFlowSpeed_var*node_4708.g)*float2(1,1));
                 float4 node_5060 = tex2D(_FlowyWaterNoise,TRANSFORM_TEX(node_9021, _FlowyWaterNoise));
-                float node_8123 = (_FlowyWaterWobblyness_var*node_5060.r);
-                float node_5212 = sin(((_WaterRingSpeed_var*node_70.g)+(_FlowyWaterRingThickness_var*DepthBlendFloat)+node_8123));
                 float _FlowyWaterDepthInfluence_var = UNITY_ACCESS_INSTANCED_PROP( Props, _FlowyWaterDepthInfluence );
-                float node_9470 = lerp(node_5212,DepthBlendFloat,_FlowyWaterDepthInfluence_var);
+                float node_5315 = (lerp(sin(((_WaterRingSpeed_var*node_70.g)+(_FlowyWaterRingThickness_var*DepthBlendFloat)+(_FlowyWaterWobblyness_var*node_5060.r))),DepthBlendFloat,_FlowyWaterDepthInfluence_var)+(DepthBlendFloat*0.6));
                 float4 _DeepColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _DeepColor );
                 float4 _ShallowColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _ShallowColor );
-                float3 diffColor = (Function( (node_9470+(DepthBlendFloat*0.6)) )+lerp(_DeepColor_var.rgb,_ShallowColor_var.rgb,DepthBlendFloat));
+                float3 diffColor = (step(0.5,node_5315)+lerp(_DeepColor_var.rgb,_ShallowColor_var.rgb,DepthBlendFloat));
                 o.Albedo = diffColor;
                 
                 return UnityMetaFragment( o );
