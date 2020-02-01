@@ -100,11 +100,11 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _VertexOffset: 0.2
-    - _WaterFlowSpeed: 0.174
+    - _WaterFlowSpeed: 0.1
     - _WaterRingSpeed: 1.73
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 0.1745283, g: 0.3326795, b: 1, a: 1}
+    - _DeepColor: {r: 0.21026166, g: 0.24639378, b: 0.5943396, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShallowColor: {r: 0.2971698, g: 0.9268318, b: 1, a: 1}
