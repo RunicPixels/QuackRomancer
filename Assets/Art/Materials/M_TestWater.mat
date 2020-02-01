@@ -78,7 +78,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DeepDepthBlend: 3
+    - _DeepDepthBlend: 3.4
     - _DepthBlend: 1
     - _DepthBlendValue: 1
     - _DepthInfluence: 0.567
@@ -102,7 +102,7 @@ Material:
     - _PrimarySpeed: 0.5
     - _Rotation: 0.7
     - _SecondarySpeed: 0.3
-    - _ShallowDepthBlend: 1
+    - _ShallowDepthBlend: 0.31
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
