@@ -8,6 +8,6 @@ public class PickUpManagerEntry : MonoBehaviour
     public Text textObject;
 
     public void SetPickUp(PickUp pickUp) {
-        textObject.text = pickUp.gameObject.name;
+        textObject.text = pickUp.pickupType + ": " + pickUp.pickupName;
     }
 }
