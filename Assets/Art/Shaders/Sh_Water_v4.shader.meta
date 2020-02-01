@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ec27e708305699c40ae299e8a57ac5ac
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _WaterRingNoise: {fileID: 2800000, guid: 13a7e0b4ff7fb4a47b685b21c6a7b4bf, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
