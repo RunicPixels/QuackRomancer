@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 334684392694833330}
   - component: {fileID: 6312217940070145099}
   m_Layer: 0
-  m_Name: M_Flower_Pink_01
+  m_Name: Flower_Pink_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5739088723239807127}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.6055361, y: 0.309, z: 3.2702322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f60d512b2d0c72640820e0d56d8617fe, type: 2}
+  - {fileID: 2100000, guid: 8edf9e42ba689dc429691e907f99aa7e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
