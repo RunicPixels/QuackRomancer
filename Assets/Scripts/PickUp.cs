@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
-    enum PickupType { Hat, Head, Body }
+    public enum PickupType { Beak, Head, Body, Tail }
+
+    public PickupType pickupType = PickupType.Body;
+    public string pickupName;
+    public bool hasBeenPickedUp = false;
 
     public void OnPickup()
     {

@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtonScript : MonoBehaviour
 {
-public void PlayGame()
+    public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("RonaldTestScene");
     }
 
     public void ReplayGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame ()

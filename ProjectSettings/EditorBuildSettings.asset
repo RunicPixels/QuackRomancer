@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadEnd.unity
     guid: d576fdde69dd4ad43b7a573d9aab5213
+  - enabled: 1
+    path: Assets/Scenes/KianTestScene.unity
+    guid: 9cc8bcd271911e642bf99e02e36492dd
+  - enabled: 1
+    path: Assets/Scenes/RonaldTestScene.unity
+    guid: 9de40b41ddef6e54f8b9db9635016319
   m_configObjects: {}
