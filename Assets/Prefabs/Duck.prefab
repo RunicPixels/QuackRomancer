@@ -357,7 +357,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5609821156723620920, guid: fab2b1fa3588fc24b8445d34aaba07f7, type: 3}
+  - {fileID: 2100000, guid: 907cb25086abdcc459968984c93e8a5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 7815902639720272547}
   - component: {fileID: 215515050713300953}
   m_Layer: 0
-  m_Name: M_Character_Duck
+  m_Name: Duck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
