@@ -20,6 +20,8 @@ public class PickUpManager : MonoBehaviour {
     public AssemblyPosition assemblyHead;
     public AssemblyPosition assemblyTail;
     public Transform hatLocation;
+    public Transform[] inventoryLocations;
+    private int lastAddedInventoryLocation = -1;
     public static string[] winningCombos = { "knife,bottle,football,fork", "screwdriver,teapot,guitar,twig", "knife,bottle,guitar,twig", "screwdriver,teapot,football,fork" };
 
     public static int generatedComboNumber = -1;
@@ -35,6 +37,12 @@ public class PickUpManager : MonoBehaviour {
             pickUp.transform.position = hatLocation.position;
         }
         else {
+            if (lastAddedInventoryLocation + 1 < inventoryLocations.Length) {
+                pickUp.gameObject.SetActive(true);
+                pickUp.transform.parent = inventoryLocations[lastAddedInventoryLocation + 1];
+                pickUp.transform.position = inventoryLocations[lastAddedInventoryLocation + 1].position;
+                lastAddedInventoryLocation++;
+            }
             currentPickups.Add(pickUp);
             UpdateListItems();
         }
