@@ -25,7 +25,7 @@ public class PickUpManager : MonoBehaviour {
     private int lastAddedInventoryLocation = -1;
     public static string[] winningCombos = { "knife,bottle,football,fork", "screwdriver,teapot,guitar,twig", "knife,bottle,guitar,twig", "screwdriver,teapot,football,fork" };
 
-    public static int generatedComboNumber = -1;
+    public static int generatedComboNumber = 1;
 
     public void Start() {
         inventoryLocations = inventoryLocationHolder.GetComponentsInChildren<Transform>();
