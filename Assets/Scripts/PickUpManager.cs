@@ -42,7 +42,7 @@ public class PickUpManager : MonoBehaviour {
         listItems.Clear();
 
         for (int i = 0; i < currentPickups.Count; i++) {
-            PickUpManagerEntry addedItem = Instantiate(itemPrefab, spawnPoint.position - i * new Vector3(0, 60, 0), Quaternion.identity, content);
+            PickUpManagerEntry addedItem = Instantiate(itemPrefab, content.position - i * new Vector3(0 * content.lossyScale.x, 60 * content.lossyScale.y, 0 * content.lossyScale.z), Quaternion.identity, content);
             listItems.Add(addedItem.gameObject);
             addedItem.SetPickUp(currentPickups[i]);
         }
