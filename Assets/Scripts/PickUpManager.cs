@@ -20,13 +20,15 @@ public class PickUpManager : MonoBehaviour {
     public AssemblyPosition assemblyHead;
     public AssemblyPosition assemblyTail;
     public Transform hatLocation;
-    public Transform[] inventoryLocations;
+    public GameObject inventoryLocationHolder;
+    private Transform[] inventoryLocations;
     private int lastAddedInventoryLocation = -1;
     public static string[] winningCombos = { "knife,bottle,football,fork", "screwdriver,teapot,guitar,twig", "knife,bottle,guitar,twig", "screwdriver,teapot,football,fork" };
 
     public static int generatedComboNumber = -1;
 
     public void Start() {
+        inventoryLocations = inventoryLocationHolder.GetComponentsInChildren<Transform>();
         UpdateListItems();
     }
 

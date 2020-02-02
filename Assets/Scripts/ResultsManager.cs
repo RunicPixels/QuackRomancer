@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ResultsManager : MonoBehaviour
 {
-    public GameObject dundundunpanel;
+    public GameObject Curtains;
     public GameObject[] winningCombos;
     public GameObject turd;
+    public Animator duckReactionAnimator;
 
     void Start() {
         for (int i = 0; i < winningCombos.Length; i++) {
@@ -22,13 +23,29 @@ public class ResultsManager : MonoBehaviour
             // sad stuff, show sad animation!
             turd.SetActive(true);
         }
+        duckReactionAnimator.SetBool("LovelyReaction", false);
+        duckReactionAnimator.SetBool("DisgustedReaction", false);
         StartCoroutine(ExampleCoroutine());
     }
 
     IEnumerator ExampleCoroutine() {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
-        dundundunpanel.SetActive(false);
+        if (PickUpManager.generatedComboNumber != -1) {
+            duckReactionAnimator.SetBool("LovelyReaction", true);
+        }
+        else {
+            duckReactionAnimator.SetBool("DisgustedReaction", true);
+        }
+
+        for (int i = 0; i < 350; i++)
+        {
+            Curtains.GetComponent<RectTransform>().Translate(0, .01f, 0);
+            yield return null;
+        }
+
+        Curtains.SetActive(false);
+
 
         yield return new WaitForSeconds(8);
 
