@@ -11,20 +11,15 @@ public class PickUp : MonoBehaviour
     public PickupType pickupType = PickupType.Body;
     public string pickupName;
     public bool hasBeenPickedUp = false;
-
-    public AudioClip pickup;
-    AudioSource audioSourcePickup;
-
-    private void Awake()
-    {
-        audioSourcePickup = GetComponent<AudioSource>();
-    }
+    public AudioClip sound;
+    public AudioSource source;
 
     public void OnPickup()
     {
         transform.position += Vector3.down * 5f;
         gameObject.layer = 5;
         gameObject.AddComponent<LayoutElement>();
-        audioSourcePickup.PlayOneShot(pickup, 1);
+        source.clip = sound;
+        source.PlayOneShot(source.clip);
     }
 }

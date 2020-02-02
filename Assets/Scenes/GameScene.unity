@@ -23900,7 +23900,8 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Hat
   hasBeenPickedUp: 0
-  pickup: {fileID: 0}
+  sound: {fileID: 0}
+  source: {fileID: 0}
 --- !u!1 &1128075249
 GameObject:
   m_ObjectHideFlags: 0
@@ -25570,7 +25571,8 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Hat
   hasBeenPickedUp: 0
-  pickup: {fileID: 0}
+  sound: {fileID: 0}
+  source: {fileID: 0}
 --- !u!135 &1197828529
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28109,6 +28111,14 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!81 &1283150920
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283150916}
+  m_Enabled: 1
 --- !u!1001 &1283332052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37881,7 +37891,8 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Hat
   hasBeenPickedUp: 0
-  pickup: {fileID: 0}
+  sound: {fileID: 0}
+  source: {fileID: 0}
 --- !u!135 &1657805954
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38095,7 +38106,8 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Hat
   hasBeenPickedUp: 0
-  pickup: {fileID: 0}
+  sound: {fileID: 0}
+  source: {fileID: 0}
 --- !u!135 &1663353732
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44261,29 +44273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpManager: {fileID: 1086959573}
---- !u!54 &1926532735 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1627039797892012644, guid: 5b61eb8e8a3af854791cf17c8d155fbb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1627039796571558939}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1926532736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926532732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c0c730b6667394fad3124f58388372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1926532735}
-  controller: {fileID: 0}
-  boostForce: 2500
-  audioSource: {fileID: 0}
-  boost: []
 --- !u!1001 &1929658282
 PrefabInstance:
   m_ObjectHideFlags: 0
