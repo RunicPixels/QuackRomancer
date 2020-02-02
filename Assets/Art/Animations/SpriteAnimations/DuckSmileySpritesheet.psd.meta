@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: f8706749e38a62148bf70863b7727bd1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5205766515271549344
+    second: DuckSmileySpritesheet_0
+  - first:
+      213: -6584594674204835857
+    second: DuckSmileySpritesheet_1
+  - first:
+      213: -8500961478986284558
+    second: DuckSmileySpritesheet_2
+  - first:
+      213: -5168747443077697394
+    second: DuckSmileySpritesheet_3
+  - first:
+      213: 6700107228381768112
+    second: DuckSmileySpritesheet_4
+  - first:
+      213: 3293425166135443520
+    second: DuckSmileySpritesheet_5
+  - first:
+      213: 7451240693660817269
+    second: DuckSmileySpritesheet_6
+  - first:
+      213: 3925675303438729193
+    second: DuckSmileySpritesheet_7
+  - first:
+      213: 135126103041380088
+    second: DuckSmileySpritesheet_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -72,7 +99,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -84,11 +111,200 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2775
+        width: 1234
+        height: 1148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea6a7355790680479f6f71fd6c5d560
+      internalID: 5205766515271549344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 2771
+        width: 1266
+        height: 1252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f1430a72cc4114c929cbf6b61a4cf3
+      internalID: -6584594674204835857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 2767
+        width: 1072
+        height: 1212
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3852143c27dd534eb8e5bfd186ce7f8
+      internalID: -8500961478986284558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1387
+        width: 934
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834635924a100024498943a73e931dda
+      internalID: -5168747443077697394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1389
+        width: 1184
+        height: 1232
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b80230d906024d4da3df2b4028a9021
+      internalID: 6700107228381768112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 1389
+        width: 1216
+        height: 1300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc8d5c453d039948bdbeb32711ea057
+      internalID: 3293425166135443520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 43
+        width: 1170
+        height: 1176
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d087c91404eb74280f3f689d442a91
+      internalID: 7451240693660817269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 45
+        width: 1172
+        height: 1172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e045b2529be331045b7517651b266b4e
+      internalID: 3925675303438729193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuckSmileySpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 43
+        width: 1170
+        height: 1176
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828162ee6a0069c4da41e081a73c3fa0
+      internalID: 135126103041380088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

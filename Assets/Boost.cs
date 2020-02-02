@@ -42,7 +42,9 @@ public class Boost : MonoBehaviour
     {
         rb.velocity *= 0.2f;
         rb.AddForce(controller.currentDirection * boostForce);
-        audioSource.clip = boost[Random.Range(0, boost.Length)];
-        audioSource.PlayOneShot(audioSource.clip);
+        if (boost != null && boost.Length != 0) {
+            audioSource.clip = boost[Random.Range(0, boost.Length)];
+            audioSource.PlayOneShot(audioSource.clip);
+        }
     }
 }
