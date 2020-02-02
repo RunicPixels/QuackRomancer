@@ -529,6 +529,7 @@ MonoBehaviour:
   - {fileID: 1587373612}
   - {fileID: 11367981}
   turd: {fileID: 1954306153}
+  duckReactionAnimator: {fileID: 1557081937}
 --- !u!4 &388740014
 Transform:
   m_ObjectHideFlags: 0
@@ -1023,6 +1024,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222eb8c8d2204194faedcaaaa43102ba, type: 3}
+--- !u!95 &1557081937 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 311545992967821878, guid: 5d985a46b0cdf10429a1ffa5d41b6843,
+    type: 3}
+  m_PrefabInstance: {fileID: 288820810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1587373612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4728722940172841136, guid: 0a7e378883a3ea240875bd381454b4ca,
