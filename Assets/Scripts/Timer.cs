@@ -7,6 +7,8 @@ public class Timer : MonoBehaviour
     public float beginTime = 60;
 
     private float currentTime;
+    public PickUpManager pickupManager;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -17,6 +19,9 @@ public class Timer : MonoBehaviour
     private void Update()
     {
         currentTime -= Time.deltaTime;
+        if (currentTime <= 0) {
+            pickupManager?.TimerIsOver();
+        }
     }
 
     public float GetCurrentTime()

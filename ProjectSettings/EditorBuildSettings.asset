@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadEnd.unity
     guid: d576fdde69dd4ad43b7a573d9aab5213
+  - enabled: 1
+    path: Assets/Scenes/RonaldTestScene.unity
+    guid: 9de40b41ddef6e54f8b9db9635016319
+  - enabled: 1
+    path: Assets/Scenes/ResultsScreen.unity
+    guid: f728e08b3dc03534f80f073ee6c98a40
   m_configObjects: {}
