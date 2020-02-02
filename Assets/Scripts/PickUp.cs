@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class PickUp : MonoBehaviour
 {
-    public enum PickupType { Beak, Head, Body, Tail }
+    public enum PickupType { Beak, Head, Body, Tail, Hat }
 
     public PickupType pickupType = PickupType.Body;
     public string pickupName;
