@@ -19,7 +19,9 @@ public class PickUpManager : MonoBehaviour {
     public AssemblyPosition assemblyBody;
     public AssemblyPosition assemblyHead;
     public AssemblyPosition assemblyTail;
-    public string[] winningCombos = { "knife,bottle,football,fork", "screwdriver,teapot,guitar,twig", "knife,bottle,guitar,twig", "screwdriver,teapot,football,fork" };
+    public static string[] winningCombos = { "knife,bottle,football,fork", "screwdriver,teapot,guitar,twig", "knife,bottle,guitar,twig", "screwdriver,teapot,football,fork" };
+
+    public static int generatedComboNumber = -1;
 
     public void Start() {
         UpdateListItems();
@@ -48,17 +50,23 @@ public class PickUpManager : MonoBehaviour {
         }
     }
 
-    private bool IsWinningCombo() {
-        if (assemblyBeak == null || assemblyBody == null || assemblyHead == null || assemblyTail == null) {
-            return false;
+    private int IsWinningCombo() {
+        if (comboID() == null) {
+            return -1;
         }
-        string id = assemblyBeak?.pickup.pickupName + "," + assemblyHead?.pickup.pickupName + "," + assemblyBody?.pickup.pickupName + "," + assemblyTail?.pickup.pickupName;
         for (int i = 0; i < winningCombos.Length; i++) {
-            if (winningCombos[i].ToLower().Equals(id.ToLower())) {
-                return true;
+            if (winningCombos[i].ToLower().Equals(comboID().ToLower())) {
+                return i;
             }
         }
-        return false;
+        return -1;
+    }
+
+    private string comboID() {
+        if (assemblyBeak == null || assemblyBody == null || assemblyHead == null || assemblyTail == null) {
+            return null;
+        }
+        return assemblyBeak?.pickup.pickupName + "," + assemblyHead?.pickup.pickupName + "," + assemblyBody?.pickup.pickupName + "," + assemblyTail?.pickup.pickupName;
     }
 
     public void RemovePickup(PickUp pickUp) {
@@ -90,7 +98,8 @@ public class PickUpManager : MonoBehaviour {
 
     public void Generate() {
         if (isInAssemblyMode) {
-            Debug.LogError(IsWinningCombo());
+            generatedComboNumber = IsWinningCombo();
+            SceneManager.LoadScene("ResultsScreen");
         }
     }
 }
