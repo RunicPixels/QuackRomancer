@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDirection: {x: 0, y: 0, z: 0}
   speed: 40
+  boostSplash: {fileID: 8300000, guid: fa52cad9ab1739c4da7791ec7d0696b2, type: 3}
 --- !u!54 &1627039797892012644
 Rigidbody:
   m_ObjectHideFlags: 0
