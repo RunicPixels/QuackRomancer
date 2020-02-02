@@ -20,7 +20,7 @@ public class MenuButtonScript : MonoBehaviour
     public void PlayGame()
     {
         audioSourceClick.PlayOneShot(click, 1);
-        SceneManager.LoadScene("RonaldTestScene");
+        SceneManager.LoadScene("GameScene");
         
     }
 

@@ -9,18 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: fecdf1c288ffe9d4d83e28a3c2f58764
   - enabled: 1
-    path: Assets/Scenes/TestSceneFrenk.unity
-    guid: c4e90e8be3eed5d4ab6286f547470579
+    path: Assets/Scenes/GameScene.unity
+    guid: 3934755f501097040a068340e8f66515
+  - enabled: 1
+    path: Assets/Scenes/ResultsScreen.unity
+    guid: f728e08b3dc03534f80f073ee6c98a40
   - enabled: 1
     path: Assets/Scenes/GoodEnd.unity
     guid: dab020085eb86e34081ed51d51a84fb1
   - enabled: 1
     path: Assets/Scenes/BadEnd.unity
     guid: d576fdde69dd4ad43b7a573d9aab5213
-  - enabled: 1
-    path: Assets/Scenes/RonaldTestScene.unity
-    guid: 9de40b41ddef6e54f8b9db9635016319
-  - enabled: 1
-    path: Assets/Scenes/ResultsScreen.unity
-    guid: f728e08b3dc03534f80f073ee6c98a40
   m_configObjects: {}
