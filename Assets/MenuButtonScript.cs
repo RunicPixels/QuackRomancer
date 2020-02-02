@@ -21,11 +21,12 @@ public class MenuButtonScript : MonoBehaviour
     {
         audioSourceClick.PlayOneShot(click, 1);
         SceneManager.LoadScene("RonaldTestScene");
+        
     }
 
     public void ReplayGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame ()
