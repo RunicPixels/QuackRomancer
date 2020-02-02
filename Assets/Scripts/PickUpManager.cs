@@ -19,6 +19,7 @@ public class PickUpManager : MonoBehaviour {
     public AssemblyPosition assemblyBody;
     public AssemblyPosition assemblyHead;
     public AssemblyPosition assemblyTail;
+    public string[] winningCombos = { "knife,bottle,football,fork", "screwdriver,teapot,guitar,twig", "knife,bottle,guitar,twig", "screwdriver,teapot,football,fork" };
 
     public void Start() {
         UpdateListItems();
@@ -47,6 +48,19 @@ public class PickUpManager : MonoBehaviour {
         }
     }
 
+    private bool IsWinningCombo() {
+        if (assemblyBeak == null || assemblyBody == null || assemblyHead == null || assemblyTail == null) {
+            return false;
+        }
+        string id = assemblyBeak?.pickup.pickupName + "," + assemblyHead?.pickup.pickupName + "," + assemblyBody?.pickup.pickupName + "," + assemblyTail?.pickup.pickupName;
+        for (int i = 0; i < winningCombos.Length; i++) {
+            if (winningCombos[i].ToLower().Equals(id.ToLower())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void RemovePickup(PickUp pickUp) {
         currentPickups.Remove(pickUp);
         UpdateListItems();
@@ -72,5 +86,11 @@ public class PickUpManager : MonoBehaviour {
         }
 
         content.sizeDelta = new Vector2(0, currentPickups.Count * 60);
+    }
+
+    public void Generate() {
+        if (isInAssemblyMode) {
+            Debug.LogError(IsWinningCombo());
+        }
     }
 }
