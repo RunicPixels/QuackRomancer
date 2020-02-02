@@ -5,14 +5,8 @@ using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(AudioSource))]
 
-
 public class MenuButtonScript : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("RonaldTestScene");
-=======
     public AudioClip click;
     public AudioClip clickQuit;
     AudioSource audioSourceClick;
@@ -23,13 +17,10 @@ public class MenuButtonScript : MonoBehaviour
         audioSourceClick = GetComponent<AudioSource>();
     }
 
-public void PlayGame()
+    public void PlayGame()
     {
-
         audioSourceClick.PlayOneShot(click, 1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
->>>>>>> Stashed changes
+        SceneManager.LoadScene("RonaldTestScene");
     }
 
     public void ReplayGame()
