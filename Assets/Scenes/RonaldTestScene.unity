@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beginTime: 60
+  pickupManager: {fileID: 1086959573}
 --- !u!4 &127351238
 Transform:
   m_ObjectHideFlags: 0
@@ -511,7 +512,7 @@ RectTransform:
   m_Children:
   - {fileID: 636963515}
   m_Father: {fileID: 1318705835}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1270,6 +1271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086959569}
+  - component: {fileID: 1086959573}
   - component: {fileID: 1086959572}
   - component: {fileID: 1086959571}
   - component: {fileID: 1086959570}
@@ -1294,7 +1296,7 @@ RectTransform:
   - {fileID: 831823636}
   - {fileID: 819112373}
   m_Father: {fileID: 1318705835}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
@@ -1367,6 +1369,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086959568}
   m_CullTransparentMesh: 0
+--- !u!114 &1086959573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086959568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037d4165ebbadfd4a8e36dbe17e1cc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPickups: []
+  spawnPoint: {fileID: 1296524739}
+  itemPrefab: {fileID: 1589028296405466386, guid: 96462dff7c5d863488e8e6c8d5aeef39,
+    type: 3}
+  content: {fileID: 105406649}
+  constructionPanel: {fileID: 2024876763}
+  timer: {fileID: 551205117}
+  duck: {fileID: 1926532732}
 --- !u!1001 &1109285526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1512,6 +1534,7 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Hat
   hasBeenPickedUp: 0
+  pickup: {fileID: 0}
 --- !u!1 &1157337869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,7 +1640,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296524739}
-  - component: {fileID: 1296524740}
   - component: {fileID: 1296524741}
   m_Layer: 0
   m_Name: pickupmanager
@@ -1645,23 +1667,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1296524740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296524738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 037d4165ebbadfd4a8e36dbe17e1cc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPickups: []
-  spawnPoint: {fileID: 1296524739}
-  itemPrefab: {fileID: 1589028296405466386, guid: 96462dff7c5d863488e8e6c8d5aeef39,
-    type: 3}
-  content: {fileID: 105406649}
 --- !u!114 &1296524741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,6 +1782,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2024876764}
   - {fileID: 1086959569}
   - {fileID: 551205118}
   m_Father: {fileID: 0}
@@ -2165,7 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bf70909a5ceac49b51867690fe6920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpManager: {fileID: 1296524740}
+  pickUpManager: {fileID: 1086959573}
 --- !u!54 &1926532735 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1627039797892012644, guid: 5b61eb8e8a3af854791cf17c8d155fbb,
@@ -2187,6 +2193,8 @@ MonoBehaviour:
   rb: {fileID: 1926532735}
   controller: {fileID: 0}
   boostForce: 2500
+  audioSource: {fileID: 0}
+  boost: []
 --- !u!1001 &1965123335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2350,6 +2358,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1502545541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2024876763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2024876764}
+  - component: {fileID: 2024876766}
+  - component: {fileID: 2024876765}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2024876764
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024876763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1318705835}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2024876765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024876763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2024876766
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024876763}
+  m_CullTransparentMesh: 0
 --- !u!1 &2076318941
 GameObject:
   m_ObjectHideFlags: 0

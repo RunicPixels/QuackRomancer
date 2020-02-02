@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickUpManager : MonoBehaviour {
     public List<PickUp> currentPickups;
@@ -9,6 +10,9 @@ public class PickUpManager : MonoBehaviour {
     public PickUpManagerEntry itemPrefab;
     private List<GameObject> listItems = new List<GameObject>();
     public RectTransform content;
+    public GameObject constructionPanel;
+    public GameObject timer;
+    public GameObject duck;
 
     public void Start() {
         UpdateListItems();
@@ -25,9 +29,15 @@ public class PickUpManager : MonoBehaviour {
         UpdateListItems();
     }
 
+    public void TimerIsOver() {
+        timer?.SetActive(false);
+        constructionPanel?.SetActive(true);
+        duck?.SetActive(false);
+    }
+
     private void UpdateListItems() {
         foreach (GameObject item in listItems) {
-            GameObject.Destroy(item);
+            Destroy(item);
         }
         listItems.Clear();
 
