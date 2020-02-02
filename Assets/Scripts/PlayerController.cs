@@ -8,12 +8,15 @@ public class PlayerController : MonoBehaviour
     public Vector3 currentDirection;
     public float speed;
 
+
     private Rigidbody _rigidbody;
+
 
     // Update is called once per frame
     private void Start()
     {
         AssignComponentReferences();
+
     }
 
     private void Update()
@@ -42,6 +45,8 @@ public class PlayerController : MonoBehaviour
     {
         if (currentDirection.magnitude > 1f) currentDirection = currentDirection.normalized;
         _rigidbody.AddForce(speed * Time.fixedDeltaTime * 60 * currentDirection);
+
+
     }
 
     private void Rotate()
