@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8210845619469082879}
   - component: {fileID: 912487077437364937}
   - component: {fileID: 6887489557617583664}
+  - component: {fileID: 3528620954009585015}
   m_Layer: 0
-  m_Name: M_Ground_Straight_05
+  m_Name: Ground_Straight_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,3 +79,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3528620954009585015
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5163818213721510636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 638422301464411737, guid: 617f874fee4b1454281fdc10ef2818aa, type: 3}
