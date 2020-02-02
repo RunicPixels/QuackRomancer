@@ -7,12 +7,7 @@ public class AssemblyPosition : MonoBehaviour
 {
     public PickUp.PickupType type;
     public PickUp pickup;
-    public Text typeText;
     public Text pickupName;
-
-    public void Start() {
-        typeText.text = type + "";
-    }
 
     public void SetPickup(PickUp newPickup) {
         pickup = newPickup;

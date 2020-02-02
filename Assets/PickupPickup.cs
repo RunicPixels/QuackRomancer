@@ -8,12 +8,11 @@ public class PickupPickup : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         PickUp pickup = other.GetComponent<PickUp>();
-        if (pickup != null && !pickup.hasBeenPickedUp)
-        {
-            pickUpManager.AddPickUp(pickup);
+        if (pickup != null && !pickup.hasBeenPickedUp) {
+            pickup.gameObject.SetActive(false);
             pickup.transform.parent = pickUpManager.transform;
             pickup.hasBeenPickedUp = true;
-            pickup.gameObject.SetActive(false);
+            pickUpManager.AddPickUp(pickup);
         }
     }
 }
