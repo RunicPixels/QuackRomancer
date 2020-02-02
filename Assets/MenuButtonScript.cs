@@ -26,7 +26,7 @@ public class MenuButtonScript : MonoBehaviour
 
     public void ReplayGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame ()
