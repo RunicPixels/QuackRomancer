@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ResultsManager : MonoBehaviour
 {
@@ -28,5 +29,14 @@ public class ResultsManager : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         dundundunpanel.SetActive(false);
+
+        yield return new WaitForSeconds(8);
+
+        if (PickUpManager.generatedComboNumber != -1) {
+            SceneManager.LoadScene("GoodEnd");
+        }
+        else {
+            SceneManager.LoadScene("BadEnd");
+        }
     }
 }
