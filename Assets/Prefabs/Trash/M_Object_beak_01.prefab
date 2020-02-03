@@ -119,7 +119,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5609821156723620920, guid: 664d389647dc82d42ac58339175d64c4, type: 3}
+  - {fileID: 2100000, guid: 907cb25086abdcc459968984c93e8a5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -188,6 +188,7 @@ MonoBehaviour:
   pickupType: 0
   pickupName: Knife
   hasBeenPickedUp: 0
+  pickup: {fileID: 0}
 --- !u!135 &101908403569768746
 SphereCollider:
   m_ObjectHideFlags: 0

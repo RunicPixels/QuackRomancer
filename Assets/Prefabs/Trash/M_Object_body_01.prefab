@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5609821156723620920, guid: 18b84dca0cc3b3f48a9654f0258e6382, type: 3}
+  - {fileID: 2100000, guid: 907cb25086abdcc459968984c93e8a5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,6 +126,7 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Football
   hasBeenPickedUp: 0
+  pickup: {fileID: 0}
 --- !u!135 &3620430598095851914
 SphereCollider:
   m_ObjectHideFlags: 0

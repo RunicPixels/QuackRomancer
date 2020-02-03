@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5609821156723620920, guid: cd5f6c3a1e436ef4e9808cc259d45ee8, type: 3}
+  - {fileID: 2100000, guid: 907cb25086abdcc459968984c93e8a5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   pickupType: 2
   pickupName: Guitar
   hasBeenPickedUp: 0
+  pickup: {fileID: 0}
 --- !u!135 &4169207836825459911
 SphereCollider:
   m_ObjectHideFlags: 0

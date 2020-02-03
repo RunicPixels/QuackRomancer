@@ -80,6 +80,7 @@ MonoBehaviour:
   pickupType: 3
   pickupName: Twig
   hasBeenPickedUp: 0
+  pickup: {fileID: 0}
 --- !u!135 &2113976036981950589
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5609821156723620920, guid: 7b7b3b3b971d4d84bada5325a0af8852, type: 3}
+  - {fileID: 2100000, guid: 907cb25086abdcc459968984c93e8a5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
